@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let n= prompt("enter a no");
+        let sum=0,odd=0,even=0;
+        for (i = 1; i <= n; i++) {
+            sum+=i;
+            if (i%2==0) {
+                even+=i;
+            }
+            else{
+                odd+=i;
+            }
+        }
+        document.writeln("the sum is = "+sum+"<br>");
+        document.writeln("the sum of odd no is = "+odd+"<br>");
+        document.writeln("the sum of even no is = "+even+"<br>");
+        
+    </script>
+</body>
+
+</html>

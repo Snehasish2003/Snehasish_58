@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i=11;
+        var n=prompt("enter a no");
+        var rem;
+        var rev=0,odd=0,even=0;
+
+        while (parseInt(n)!=0) {
+            rem=parseInt(n)%10;
+            if (rem%2==0) {
+                even++;
+            }
+            else{
+                odd++;
+            }
+            n=parseInt(n)/10;
+            rev=(rev*10)+rem;
+        }
+        document.write(rev + "<br/>");
+        document.write("odd = "+odd + "<br/>");
+        document.write("even = "+even + "<br/>");
+        </script>
+</body>
+</html>
